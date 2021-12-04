@@ -1,19 +1,19 @@
 import './style.css';
 
-const arrays = [
+const taskList = [
 {
-  description: 'task for today',
-  completed: true,
+  description: 'task1',
+  completed: 0,
   index: 0,
 },
 {
-    description: 'task for today 2',
-    completed: true,
+    description: 'task2',
+    completed: 0,
     index: 0,
   },
   {
-    description: 'task for today 3',
-    completed: true,
+    description: 'task3',
+    completed: 0,
     index: 0,
   },
 ];
@@ -22,7 +22,6 @@ const lists = document.querySelector('#lists');
 
 function createTasks(task) {
     const listsItems = document.createElement('li');
-
     listsItems.innerHTML = `<div class="list-line">
         <input type="checkbox" class="check">
         <input class="list-area" rows="1">${task.description}
@@ -31,7 +30,7 @@ function createTasks(task) {
     lists.appendChild(listsItems);
 }
 
-lists.forEach((task) => createTasks(task));
+taskList.forEach((task) => createTasks(task));
 
 const checkbox = document.querySelectorAll('.check');
 checkbox.forEach((element) => {

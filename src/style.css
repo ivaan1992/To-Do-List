@@ -24,9 +24,10 @@ ul {
 }
 
 .list-line {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  
 }
 
 .d-flex {
@@ -47,7 +48,56 @@ ul {
   justify-content: center;
 }
 
+.container h3 {
+  text-align: center;
+}
+
 form {
-  border: 2px solid black;
+  border: none;
+  width: 600px;
+}
+
+#input {
+  background-position: right;
   width: 100%;
+  height: 3vh;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.enter {
+  width: 6%;
+  background-image: url('icons/enter-icon.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  border: none;
+}
+
+textarea {
+  overflow: hidden;
+  cursor: default;
+  border: none;
+  flex-grow: 2;
+  color: black;
+  font-weight: lighter;
+}
+
+textarea::-webkit-resizer {
+  display: none;
+}
+
+textarea:focus-visible {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.list-area {
+  background-image: url('icons/option-dots.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 500px;
+  border: none;
+  height: 3vh;
 }
