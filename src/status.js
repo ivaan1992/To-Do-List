@@ -33,7 +33,6 @@ export default class Status {
       this.saveStorage();
     }
 
-    
     unmark = (index) => {
       const task = this.taskList[index];
       task.completed = false;

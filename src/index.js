@@ -43,8 +43,7 @@ function createTasks(task) {
   divItem.appendChild(text);
   lists.appendChild(listsItems);
 
-  taskCheck.addEventListener('change', () => 
-  (taskCheck.checked ? markDone(taskCheck) : unmarkDone(taskCheck)
+  taskCheck.addEventListener('change', () => (taskCheck.checked ? markDone(taskCheck) : unmarkDone(taskCheck)
   ));
 }
 
