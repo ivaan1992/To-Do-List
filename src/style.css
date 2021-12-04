@@ -4,7 +4,49 @@
   box-sizing: border-box;
 }
 
-body, h1 {
-  color: red;
+body {
+  background-color: #f6f6f6;
 }
 
+section {
+  box-shadow: 4px 4px 10px gray;
+  border-radius: 0.30rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+textarea {
+  overflow: hidden;
+  cursor: default;
+  border: none;
+  flex-grow: 2;
+  color: #000;
+  font-weight: lighter;
+  width: 40%;
+  height: 34px;
+}
+
+textarea::-webkit-resizer {
+  display: none;
+}
+
+textarea:focus-visible {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.list-line {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.mark {
+    color: gray;
+    text-decoration: line-through;
+  }
