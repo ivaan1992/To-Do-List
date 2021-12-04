@@ -6,7 +6,7 @@
 
 body {
   background-color: #f6f6f6;
-  font-family: ;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -107,4 +107,31 @@ textarea:focus-visible {
 .mark {
   color: gray;
   text-decoration: line-through;
+}
+
+#clear-items {
+  background-color: transparent;
+  border: none;
+}
+
+.div-class {
+  display: flex;
+  margin-bottom: 3px;
+  width: 609px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+}
+
+.checkbox {
+ align-items: center;
+ margin-right: 15px;
+ margin-top: 10px;
+}
+
+.text {
+  width: 590px;
+  margin-top: 5px;
+  height: 3vh;
+  border: none;
 }

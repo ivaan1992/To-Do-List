@@ -1,6 +1,5 @@
 import './style.css';
 import Status from './status.js'
-import { func } from 'assert-plus';
 
 const taskList = new Status();
 
@@ -22,16 +21,16 @@ function createTasks(task) {
   const listsItems = document.createElement('li');
   const divItem = document.createElement('div');
   const taskCheck = document.createElement('input');
-  const text = document.createElement('textarea');
+  const text = document.createElement('input');
   
 
   divItem.id = task.index;
-  divItem.classList.add('d-flex');
+  divItem.classList.add('d-flex', 'div-class');
   taskCheck.setAttribute('type', 'checkbox');
   taskCheck.classList.add('checkbox');
   taskCheck.checked = task.completed;
 
-  text.classList.add('textarea');
+  text.classList.add('input', 'text');
   text.setAttribute('rows','1');
   text.innerHTML = task.description;
 
