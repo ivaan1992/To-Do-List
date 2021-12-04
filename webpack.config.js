@@ -5,17 +5,17 @@ module.exports = {
   resolve: {
     modules: [],
     fallback: {
-       "fs": false,
-       "tls": false,
-       "net": false,
-       "path": false,
-       "zlib": false,
-       "http": false,
-       "https": false,
-       "stream": false,
-       "crypto": false,
-       "crypto-browserify": require.resolve('crypto-browserify'),
-    }
+      fs: false,
+      tls: false,
+      net: false,
+      path: false,
+      zlib: false,
+      http: false,
+      https: false,
+      stream: false,
+      crypto: false,
+      'crypto-browserify': require.resolve('crypto-browserify'),
+    },
   },
   mode: 'development',
   entry: {

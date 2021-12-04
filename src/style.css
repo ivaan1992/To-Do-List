@@ -124,9 +124,9 @@ textarea:focus-visible {
 }
 
 .checkbox {
- align-items: center;
- margin-right: 15px;
- margin-top: 10px;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 .text {

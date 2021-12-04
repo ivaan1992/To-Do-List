@@ -1,5 +1,5 @@
 import './style.css';
-import Status from './status.js'
+import Status from './status.js';
 
 const taskList = new Status();
 
@@ -22,7 +22,6 @@ function createTasks(task) {
   const divItem = document.createElement('div');
   const taskCheck = document.createElement('input');
   const text = document.createElement('input');
-  
 
   divItem.id = task.index;
   divItem.classList.add('d-flex', 'div-class');
@@ -31,10 +30,10 @@ function createTasks(task) {
   taskCheck.checked = task.completed;
 
   text.classList.add('input', 'text');
-  text.setAttribute('rows','1');
+  text.setAttribute('rows', '1');
   text.innerHTML = task.description;
 
-  if(task.completed){
+  if (task.completed) {
     taskCheck.classList.add('check');
     text.classList.add('mark');
   }
@@ -49,4 +48,4 @@ function createTasks(task) {
 
 window.addEventListener('DOMContentLoaded', () => {
   Object.values(taskList.taskList).forEach((value) => createTasks(value));
-})
+});
