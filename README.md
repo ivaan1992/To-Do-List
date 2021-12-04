@@ -4,7 +4,7 @@
 
 This is a project that I create to practice webpack. 
 
-![screenshot](https://user-images.githubusercontent.com/73128809/144694338-9c742cfa-d277-4e3b-90c4-10030b9852a7.png)
+![screenshot](https://user-images.githubusercontent.com/73128809/144714616-ef209345-3532-4e86-9397-03a51d2b8f1f.png)
 
 The purpose of this project is create a to do list including webpack.
 
