@@ -1,20 +1,21 @@
+
 import './style.css';
 
 const taskList = [
   {
     description: 'task1',
-    completed: 0,
+    completed: true,
     index: 0,
   },
   {
     description: 'task2',
-    completed: 0,
-    index: 0,
+    completed: true,
+    index: 1,
   },
   {
     description: 'task3',
-    completed: 0,
-    index: 0,
+    completed: false,
+    index: 2,
   },
 ];
 
