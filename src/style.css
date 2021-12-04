@@ -12,32 +12,15 @@ section {
   box-shadow: 4px 4px 10px gray;
   border-radius: 0.30rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-textarea {
-  overflow: hidden;
-  cursor: default;
-  border: none;
-  flex-grow: 2;
-  color: #000;
-  font-weight: lighter;
-  width: 40%;
-  height: 34px;
-}
-
-textarea::-webkit-resizer {
-  display: none;
-}
-
-textarea:focus-visible {
-  outline: none;
-  text-decoration: none;
-  color: #000;
 }
 
 .list-line {
@@ -46,7 +29,25 @@ textarea:focus-visible {
   align-items: center;
 }
 
-.mark {
-    color: gray;
-    text-decoration: line-through;
-  }
+.d-flex {
+  display: flex;
+}
+
+.d-flex img {
+  width: 38px;
+  height: 39px;
+}
+
+.container {
+  width: 50%;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  border: 2px solid black;
+  width: 100%;
+}

@@ -25,13 +25,13 @@ function createTasks(task) {
 
     listsItems.innerHTML = `<div class="list-line">
         <input type="checkbox" class="check">
-        <textarea class="list-area" rows="1">${task.description}</textarea>
+        <input class="list-area" rows="1">${task.description}
         <div class="dots-icon"></div> 
     </div>`;
     lists.appendChild(listsItems);
 }
 
-list.forEach((task) => createTasks(task));
+lists.forEach((task) => createTasks(task));
 
 const checkbox = document.querySelectorAll('.check');
 checkbox.forEach((element) => {
