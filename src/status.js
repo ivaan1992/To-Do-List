@@ -1,41 +1,25 @@
 export default class Status {
   constructor() {
-    if (localStorage.getItem('taskList') === null) {
-      this.taskList = {
-        0: {
-          description: 'task1',
-          completed: false,
-          index: 0,
-        },
-        1: {
-          description: 'task2',
-          completed: false,
-          index: 1,
-        },
-        2: {
-          description: 'task3',
-          completed: false,
-          index: 2,
-        },
-      };
+    if (localStorage.getItem('list') === null) {
+      this.list = [];
     } else {
-      this.taskList = JSON.parse(localStorage.getItem('taskList'));
+      this.list = JSON.parse(localStorage.getItem('list'));
     }
   }
 
-    saveStorage = () => {
-      localStorage.setItem('taskList', JSON.stringify(this.taskList));
-    }
+  saveStorage = () => {
+    localStorage.setItem('list', JSON.stringify(this.list));
+  }
 
-    mark = (index) => {
-      const task = this.taskList[index];
-      task.completed = true;
-      this.saveStorage();
-    }
+  mark = (index) => {
+    const task = this.list[index];
+    task.completed = true;
+    this.saveStorage();
+  }
 
-    unmark = (index) => {
-      const task = this.taskList[index];
-      task.completed = false;
-      this.saveStorage();
-    }
+  unmark = (index) => {
+    const task = this.list[index];
+    task.completed = false;
+    this.saveStorage();
+  }
 }
