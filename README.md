@@ -17,7 +17,7 @@ The purpose of this project is create a to do list including webpack.
 ## Live Demo
 
 
-[Live Demo Link](https://ivaan1992.github.io/To-Do-List/)
+[Live Demo Link](https://ivaan1992.github.io/To-Do-List/dist)
 
 ## Authors
 
